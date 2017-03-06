@@ -194,10 +194,11 @@
             apiKey = { name: 'apiKey', value: $('input[name=key]').val() },
             apiSecret = { name: 'apiSecret', value: $('input[name=secret]').val() },
             apiName = { name: 'apiName', value: $('input[name=apiName]').val() },
+            apiServer = { name: 'apiServer', value: $('input[name=basePath]').val() },
             apiUsername = { name: 'apiUsername', value: $('input[name=username]').val() },
             apiPassword = { name: 'apiPassword', value: $('input[name=password]').val() };;
 
-        params.push(apiKey, apiSecret, apiName, apiUsername, apiPassword);
+        params.push(apiKey, apiSecret, apiName, apiServer, apiUsername, apiPassword);
 
         //Accounts for array values
         for (i in params) {

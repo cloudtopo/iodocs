@@ -184,7 +184,12 @@ $(document).ready(function() {
                         if (paramReference.type == "textarea") {
                             parameterOptions["type"] = "textarea";
                             parameterOptions["cols"] = 20;
-                            paramReference.type = "string";
+                        }
+
+                        if (paramReference.type == "json") {
+                            parameterOptions["type"] = "json";
+                            parameterOptions["cols"] = 20;
+                            
                         }
 
                         //Sets options to type boolean 

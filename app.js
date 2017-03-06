@@ -641,7 +641,8 @@ function processRequest(req, res, next) {
         }
     }
 
-    var baseHostInfo = apiConfig.basePath.split(':');
+    //var baseHostInfo = apiConfig.basePath.split(':');
+    var baseHostInfo = reqQuery.apiServer.split(':');
     var baseHostUrl = baseHostInfo[1].split('//')[1],
         baseHostPort = (baseHostInfo.length > 2) ? baseHostInfo[2] : "";
 

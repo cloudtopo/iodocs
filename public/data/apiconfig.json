@@ -19,5 +19,8 @@
     },
     "requestbin": {
         "name": "Requestb.in"
-    }
+    },
+   "kite": {
+      "name":"kite"
+   }
 }
